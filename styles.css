@@ -1,0 +1,766 @@
+@keyframes popTitulo{
+  0%{
+    transform: scale(0.8);
+    opacity:0;
+  }
+  60%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+    opacity:1;
+  }
+}
+
+
+@font-face {
+    font-family: LeisollReeKf;
+    src: url("Leisoll Reef.otf");
+}
+@font-face {
+    font-family: SoinK;
+    src: url("Soin Sans Pro Roman.ttf");
+}
+
+@font-face {
+    font-family: FaxfontK;
+    src: url("Faxfont Fine Regular.otf");
+}
+
+body{
+  
+
+  background-image: url("img/agusfondo.jpg");
+  background-size: contain;
+  background-position: center;
+  }
+
+
+img.flor1{
+  position: absolute;
+  top: 0;
+  left: 15%;
+  transform: translateX(-50%);
+  width: 260px; 
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.2),
+  0 2px 6px rgba(0,0,0,0.2);
+}
+
+img.flor2{
+  position: absolute;
+  top: 31%;
+  left: 75%;
+  transform: translateX(-50%);
+  /*transform: rotate(25deg);*/
+  width: 260px; 
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.2),
+  0 2px 6px rgba(0,0,0,0.2);
+
+}
+img.flor3{
+  position: absolute;
+  top: 57%;
+  left: 12%;
+  transform: translateX(-50%);
+  width: 260px; 
+  transform: translateX(-50%) scaleX(-1);  
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.2),
+  0 2px 6px rgba(0,0,0,0.2);
+  
+}
+
+img.flor4{
+  position: absolute;
+  top: 143%;
+  left: 66%;
+  transform: translateX(-50%);
+  width: 260px; 
+  transform: translateX(-50%) scaleX(-1);
+  transform: translateX(-50%) rotate(270deg); 
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.2),
+  0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+img.flor5{
+  position: absolute;
+  top: 192%;
+  left: 26%;
+  transform: translateX(-50%);
+  width: 260px; 
+  transform: translateX(-50%) rotate(-185deg)  ; 
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.2),
+  0 2px 6px rgba(0,0,0,0.2);
+}
+
+img.flor6{
+  position: absolute;
+  top: 235%;
+  left: 66%;
+  transform: translateX(-50%);
+  width: 260px; 
+  transform: translateX(-50%) rotate(270deg) scaleY(-1);  
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.2),
+  0 2px 6px rgba(0,0,0,0.2);
+}
+/*
+img.flor7{
+  position: absolute;
+  top: 62%;
+  left: 95%;
+  transform: translateX(-50%) rotate(5deg);
+  width: 110px; 
+}
+
+img.flor8{
+  position: absolute;
+  top: 102%;
+  left: 5%;
+  transform: translateX(-50%) rotate(15deg);
+  width: 110px; 
+}
+
+img.flor9{
+  position: absolute;
+  top: 152%;
+  left: 96%;
+  transform: translateX(-50%) rotate(25deg);
+  width: 110px; 
+}
+
+img.flor10{
+  position: absolute;
+  top: 215%;
+  left: 5%;
+  transform: translateX(-50%) rotate(35deg);
+  width: 110px; 
+}
+
+img.flor11{
+  position: absolute;
+  top: 275%;
+  left: 96%;
+  transform: translateX(-50%) rotate(-55deg);
+  width: 110px; 
+}
+
+img.flor12{
+  position: absolute;
+  top: -5%;
+  left: 6%;
+  transform: translateX(-50%) rotate(5deg);
+  width: 110px; 
+}
+*/
+
+
+.cuadro1 { 
+  width: 405px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, 
+    transparent 85%, 
+    #efe1c7 100%
+  ), url("img/agus.png");
+  background-size: cover;
+  /*box-shadow: 0 1px 1px rgb(44, 38, 27,0.10);*/
+  margin: 60px auto;
+  border-radius: 10px;
+  border: 2px solid rgb(223, 211, 191,0.10); /* borde blanco semi-transparente */
+  box-shadow: 0 0 20px rgb(205, 195, 177,0.3); /* sombra blanca alrededor */
+  
+}
+/*chelineK TrenchK   */
+div.TITULO1 h2{
+  font-family: FaxfontK;
+  font-size: 1.5rem;
+  font-weight: 300; /* letra más delgada */
+}
+
+div.TITULO1{
+  text-align: center;   /* centra el texto */
+padding-top: -10px;
+  text-shadow:
+  0 1px 1px rgba(0,0,0,0.2),
+  0 2px 1px rgba(0,0,0,0.2);
+  animation: popTitulo 1s ease;
+
+}
+
+/*Beautymindk  BethanK BlueryK  KimK */
+  div.TITULO2 h1{
+  font-family: LeisollReeKf;
+  font-size: 6.8rem;
+  font-weight: 200;
+
+    background: linear-gradient(199deg,#000000,#f0cb7a,#171716,#f0cb7a,#000000);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+    0 1px 2px rgba(0,0,0,0.3),
+    0 2px 6px rgba(0,0,0,0.4);
+}
+
+
+
+div.TITULO2{
+   text-align: center;   /* centra el texto */
+  margin-top: -91px;
+  margin-left: 25px;
+
+  font-size: 31px;
+  text-shadow:
+  0 1px 3px rgba(0,0,0,0.6),
+  0 0 4px rgba(0,0,0,0.4);
+  animation: popTitulo 1s ease;
+  /*bisel y relieve*/
+}
+
+
+div.TITULO3{
+  text-align: center;   /* centra el texto */
+  margin-top: -100px;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.2),
+  0 2px 2px rgba(0,0,0,0.2);
+  animation: popTitulo 1s ease;
+
+}
+
+div.TITULO3 h4{
+  font-family: FaxfontK;
+  font-size: 1.2rem;
+  font-weight: 300; /* letra más delgada */
+
+}
+
+
+.cuadro2{
+  width: 450px;
+  height: 190px;
+  background-image: linear-gradient(to bottom, 
+      transparent 85%, 
+      #efe1c7 100%
+    ), url("img/agus.png");
+  background-size: cover;
+  margin: 35px auto; /* aumenté el margen superior para bajarlo */
+  border-radius: 10px;
+  border: 2px solid rgb(223, 211, 191,0.10); /* borde blanco semi-transparente */
+  box-shadow: 0 0 20px rgb(205, 195, 177,0.3); /* sombra blanca alrededor */
+
+}
+.cuadro3{
+  width: 450px;
+  height: 190px;
+  background-image: linear-gradient(to bottom, 
+    transparent 85%, 
+    #efe1c7 100%
+  ), url("img/agus.png");
+  background-size: cover;
+  /*box-shadow: 0 1px 1px rgb(44, 38, 27,0.10);*/
+  margin:30px auto;
+  border-radius: 10px;
+  border: 2px solid rgb(223, 211, 191,0.10); /* borde blanco semi-transparente */
+  box-shadow: 0 0 20px rgb(205, 195, 177,0.3); /* sombra blanca alrededor */
+  
+  
+}
+.cuadro4{
+  width: 450px;
+  height: 190px;
+  background-image: linear-gradient(to bottom, 
+    transparent 85%, 
+    #efe1c7 100%
+  ), url("img/agus.png");
+  background-size: cover;
+  /*box-shadow: 0 1px 1px rgb(44, 38, 27,0.10);*/
+  margin:-5px auto;
+  border-radius: 10px;
+  border: 2px solid rgb(223, 211, 191,0.10); /* borde blanco semi-transparente */
+  box-shadow: 0 0 20px rgb(205, 195, 177,0.3); /* sombra blanca alrededor */
+
+
+}
+.cuadro5{
+  width: 450px;
+  height: 190px;
+  background-image: linear-gradient(to bottom, 
+    transparent 85%, 
+    #efe1c7 100%
+  ), url("img/agus.png");
+  background-size: cover;
+
+  margin: 30px auto; 
+
+  border-radius: 10px;
+  border: 2px solid rgb(223, 211, 191,0.10);
+  box-shadow: 0 0 20px rgb(205, 195, 177,0.3);
+}
+
+.cuadro6{
+  position: relative;
+  z-index: 100;
+  width: 450px;
+  height: 190px;
+  background-image: linear-gradient(to bottom, 
+    transparent 85%, 
+    #efe1c7 100%
+  ), url("img/agus.png");
+  background-size: cover;
+  margin: 400px auto 40px auto;
+  margin: 0 auto;
+
+
+  border-radius: 10px;
+  border: 2px solid rgb(223, 211, 191,0.10); 
+  box-shadow: 0 0 20px rgb(205, 195, 177,0.3);
+}
+
+.boton6:hover, .bord4:hover, .bord:hover{
+  transform: scale(1.06);
+
+  filter:
+    drop-shadow(0 2px 4px rgba(0,0,0,0.4))
+    drop-shadow(0 0 12px rgba(201,168,106,0.7))
+    drop-shadow(0 0 6px rgba(255,255,255,0.5));
+}
+
+.boton6:active, .bord4:active, .bord:active{
+  transform: scale(0.95);
+  filter:
+    drop-shadow(0 1px 2px rgba(0,0,0,0.5));
+
+}
+
+.CUANTOFALTA h3 {
+  text-align: center;    /* centra el texto */
+  margin-bottom: -0px;   /* espacio abajo */
+  margin-top: -40px;     /* lo sube un poco */
+}
+
+/* BlueryK  GracilityK MightK */
+div.CUANTOFALTA h3{
+  font-family: LeisollReeKf;
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+.contencont{
+  background-image: linear-gradient(to bottom, 
+    transparent 85%, 
+    #efe1c7 100%
+  ), url("img/agus.png");
+  background-color: #e4d0af; /* dorado claro */
+  width: 66%;       /* ancho del contenedor */
+ /* max-width: 455px; */ /* opcional, para no crecer demasiado en pantallas grandes */
+  border-radius: 2px; /* opcional, bordes redondeados */
+  box-shadow: 0 0 20px rgb(205, 195, 177,0.3),   
+        0 0 3px rgb(102, 100, 96,0.3);
+  margin: 0 auto;
+  padding: 3px 5px;
+  width: calc(61% - 40px);
+
+
+  
+}
+
+CONT{
+  text-align: center;
+  margin-top: -130px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  margin-left: -1;
+  margin-right: auto;
+  font-family: monospace; /* todos los dígitos ocupan el mismo ancho */
+
+}
+
+div.CONT {
+  font-family: FaxfontK;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.1),
+  0 2px 2px rgba(0,0,0,0.1);
+  letter-spacing: -1px;
+
+}
+
+#tiempo{
+  display:block;
+  margin:0 auto;
+  text-align:center;
+  font-variant-numeric: tabular-nums;
+  font-family: monospace;
+
+  
+}
+
+.d-h-m-s{
+  text-align: center;  
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 300px;
+  margin: 2px auto; 
+  margin-left:26px;
+}
+
+div.d-h-m-s {
+  font-family: FaxfontK;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.1),
+  0 2px 2px rgba(0,0,0,0.1);
+}
+
+.COMOLLEGAR{
+  text-align: center;    /* centra el texto */
+  margin-top: -50px;     /* lo sube un poco */
+  
+}
+
+div.COMOLLEGAR h3{
+  font-family: LeisollReeKf;
+  font-size: 3.5rem;
+  font-weight: 100;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.2),
+  0 2px 2px rgba(0,0,0,0.2);
+  
+  
+}
+
+img.loc{
+  width: 38px;         
+  height: 38px;   
+  margin-left: 200px;      /* mueve a la derecha */
+position: relative;
+top: -65px;   /* esto sí lo sube */
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.1),
+  0 2px 2px rgba(0,0,0,0.1);
+  
+}
+
+.ubicacion{
+  text-align: center;    /* centra el texto */
+  margin-top: -85px;     /* lo sube un poco */
+ 
+ 
+}
+
+div.ubicacion h3{
+  font-family: FaxfontK;
+  font-size: 1.2rem;
+  font-weight: 50;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+.BOTON{
+  margin-top: -0px;     /* lo sube un poco */
+  margin-left: -30px;     /* lo sube un poco */
+}
+
+.bord{
+  width:210px;
+  display:block;
+  margin-top: -50px; 
+  margin-left: 110px;
+
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.2),
+  0 2px 2px rgba(0,0,0,0.2);
+
+  animation: popTitulo 2s ease;
+}
+
+
+.FRASE{
+  text-align: center;    
+  margin: -10px 0; 
+  font-size: 10px;
+
+  
+}
+/*TrenchK ChelineK*/
+div.FRASE H3{
+  font-family: FaxfontK;
+  font-size: 1rem;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+  font-weight: 100;      /* lo más fino posible */
+  letter-spacing: 1px;   /* ayuda a que se vea más delicado */
+}
+
+
+
+img.reloj{
+  width: 43px;         
+  height: 43px;   
+  margin-left: 200px;     /* lo sube un poco */
+position: relative;
+top: -12px;   /* esto sí lo sube */
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.1),
+  0 2px 2px rgba(0,0,0,0.1);
+}
+ 
+.HORARIOTITULO{
+  text-align: center;    /* centra el texto */
+margin-top: -40px;
+
+
+}
+
+div.HORARIOTITULO h3{
+ font-family: LeisollReeKf;
+  font-size: 3.4rem;
+  font-weight: 100;
+  margin-bottom: 0px;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+.HORARIO1{
+  text-align: center;
+  margin-top: -38px;
+  font-size: 16px;
+
+}
+
+div.HORARIO1 h3{
+  font-family: FaxfontK;
+  font-size: 1.3rem;
+  font-weight: 50;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+.DRESSCODETITULO{
+  text-align: center;    /* centra el texto */
+  margin-top: -30px;     /* lo sube un poco */
+}
+div.DRESSCODETITULO h3{
+  font-family: LeisollReeKf;
+  font-size: 3.4rem;
+  font-weight: 100 ;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+img.shoe{
+  width: 35px;         
+  height: 35px;   
+  margin-left: -5px;      /* mueve a la derecha */
+position: relative;
+top: -58px;   /* esto sí lo sube */
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.1),
+  0 2px 2px rgba(0,0,0,0.1);
+}
+
+.etiq1{
+  ext-align: center;    /* centra el texto */
+  margin-top: -72px;     /* lo sube un poco */
+  
+}
+
+div.etiq1 h3{
+  font-family: FaxfontK;
+  font-size: 1.2rem;
+  font-weight: 50;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+.etiq3{
+  ext-align: center;    /* centra el texto */
+  margin-top: -16px;     /* lo sube un poco */
+  
+}
+
+div.etiq3 h4{
+  font-family: FaxfontK;
+  font-size: 1.2rem;
+  font-weight: 50;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+.REGALOTITULO{
+  text-align: center;    /* centra el texto */
+  margin-top: -37px;     /* lo sube un poco */
+  
+}
+
+div.REGALOTITULO h3{
+  font-family: LeisollReeKf;
+  font-size: 3.4rem;
+  font-weight: 100;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+img.reg{
+  width: 90px;         
+  height: 90px;   
+  margin-left: 179px;      /* mueve a la derecha */
+position: relative;
+top: -80px;   /* esto sí lo sube */
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.1),
+  0 2px 2px rgba(0,0,0,0.1);
+}
+
+.alias1{
+  text-align: center;    /* centra el texto */
+  margin-top: -123px;     /* lo sube un poco */
+}
+.alias1 h3{
+  font-family: FaxfontK;
+  font-size: 1.2rem;
+  font-weight: 50;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+.link1{
+  text-align: center;
+  margin-top: 40px;
+}
+div.link1 h3{
+  font-family: FaxfontK;
+  font-size: 1.2rem;
+  font-weight: 50;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+.link2{
+  text-align: center;    /* centra el texto */
+  margin-top: -15px;     /* lo sube un poco */
+  font-size: 23px;
+}
+div.link2 h3{
+  font-family: FaxfontK;
+  font-size: 1.2rem;
+  font-weight: 50;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+.BOTON2{
+  text-align: center;    /* centra el texto */
+}
+
+.boton6{
+  position: relative;
+  width:240px;
+  display:block;
+  margin: -60px auto; /* limpio */
+
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+
+  z-index: 1;
+  animation: popTitulo 2s ease;
+}
+
+img.cam1{
+  width: 80px;         
+  height: 80px;   
+  margin-left: 190px;      /* mueve a la derecha */
+  margin-top:  -30px;       /* mueve hacia abajo */
+  display:block;
+  margin:-30px auto;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.1),
+  0 2px 2px rgba(0,0,0,0.1);
+
+
+}
+
+.CONFIRMACIONTITULO{
+  text-align: center;    /* centra el texto */
+  margin-top:-25px;     /* lo sube un poco */
+}
+div.CONFIRMACIONTITULO h3{
+  font-family: LeisollReeKf;
+  font-size: 2.9rem;
+  font-weight: 100;
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+  0 2px 6px rgba(0,0,0,0.3);
+}
+
+img.wpp{
+  width: 65px;         
+  height: 65px;   
+  margin-left: 196px;      /* mueve a la derecha */
+  position: relative;
+  top: -60px;   /* esto sí lo sube */
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.1),
+  0 2px 2px rgba(0,0,0,0.1);
+}
+
+.boton4{
+  display: block;
+  margin-top: 20px; 
+  margin-left: 130px;
+}
+
+.bord4{
+  position: relative;
+  width:240px;
+  display:block;
+  margin-top: -130px; /* pequeño ajuste */
+
+  margin-left: -30px;
+
+  text-shadow:
+  0 1px 2px rgba(0,0,0,0.3),
+   0 2px 6px rgba(0,0,0,0.3);
+
+  animation: popTitulo 2s ease;
+  z-index: 1;
+}
+/*
+.logoxv{
+    width:100px;
+    height:100px;
+    display:block;
+    margin:0px auto;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.4))
+          drop-shadow(0 0 5px rgba(201,168,106,0.50));
+  drop-shadow(0 0 3px rgba(255,255,255,0.3)); 
+  }
+
+
+*/
