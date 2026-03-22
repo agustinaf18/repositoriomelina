@@ -1,31 +1,25 @@
-// Función para actualizar el contador
 function actualizarContador() {
-  // Fecha y hora del evento (19 de julio a las 21:30)
   var fechaEvento = new Date("2026-04-25T21:30:00").getTime();
-
-  // Obtener la fecha y hora actual
   var ahora = new Date().getTime();
-
-  // Calcular la diferencia de tiempo
   var distancia = fechaEvento - ahora;
 
-  // Calcular días, horas, minutos y segundos
-  var dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-  var horas = Math.floor(
-    (distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-  );
-  var minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-  var segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+  if (distancia > 0) {
+    var dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    var horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    var segundos = Math.floor((distancia % (1000 * 60)) / 1000);
 
-  // Mostrar el contador en el HTML
-  document.getElementById("tiempo").innerHTML =
-    dias + " : " + horas + " : " + minutos + " : " + segundos;
-
-  // Si el evento ha pasado, mostrar un mensaje
-  if (distancia < 0) {
-    document.getElementById("tiempo").innerHTML = "¡La fiesta comenzo!";
+    document.getElementById("dias").textContent = dias.toString().padStart(2,"0");
+    document.getElementById("horas").textContent = horas.toString().padStart(2,"0");
+    document.getElementById("minutos").textContent = minutos.toString().padStart(2,"0");
+    document.getElementById("segundos").textContent = segundos.toString().padStart(2,"0");
+  } else {
+    document.getElementById("dias").textContent = "00";
+    document.getElementById("horas").textContent = "00";
+    document.getElementById("minutos").textContent = "00";
+    document.getElementById("segundos").textContent = "00";
   }
 }
 
-// Actualizar el contador cada segundo
+// Ejecutar cada segundo
 setInterval(actualizarContador, 1000);

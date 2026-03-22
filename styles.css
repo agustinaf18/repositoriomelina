@@ -30,21 +30,93 @@ html, body {
 }
 
 body {
-  background-image: url("img/agusfondo.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #e9dac2;   /* color de respaldo si la img falla */
+  background-image: url("img/fondo3beige1122.png");
   background-repeat: no-repeat;
+  background-size: contain ;      /* o contain si no querés que corte */
+  background-position: center center;
+   background-size: 110% auto;     
+  background-position: center top;
 }
 
-/* Contenedor principal */
+.decoracion {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /*overflow: hidden;*/
+}
+
 .contenedor {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
-  box-sizing: border-box; /* evita que padding sume al tamaño total */
+  padding: 40px 20px;
+   /*box-sizing: border-box;
+ overflow: hidden;*/
 }
+
+.FLOR1, .FLOR2, .FLOR3, .FLOR4 {
+  position: absolute;
+  width: 220px;
+  height: auto;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+}
+
+.FLOR1 {
+  top: 0%;    /* ← subí o bajá este % */
+  left: 0%;
+}
+
+.FLOR2 {
+  top: 17%;   /* ← la principal, movela desde acá */
+  left: 53%;
+  transform: rotate(0deg);
+}
+
+.FLOR3 {
+  top: 32%;   /* ← subí o bajá este % para mover la de abajo */
+  left: 5%;
+  transform: translateX(-20%) scaleX(-1) rotate(-268deg);
+  width: 260px;
+}
+
+.FLOR4 {
+  top: 20%;   /* ← subí o bajá este % para mover la de abajo */
+  left: 70%;
+  transform: translateX(-20%) scaleX(-1) rotate(-90deg);
+  width: 260px;
+}
+
+.FLOR5 {
+  top: 46%;   /* ← subí o bajá este % para mover la de abajo */
+  left: 65%;
+  transform: translateX(-20%) scaleX(-1) rotate(-90deg);
+position: absolute;
+width: 260px;
+height: auto;
+filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));}
+
+.FLOR6 {
+  top: 65%;   /* ← subí o bajá este % para mover la de abajo */
+  left: -5%;
+  transform: translateX(-20%) scaleX(1) rotate(195deg);
+position: absolute;
+width: 260px;
+height: auto;
+filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));}
+
+.FLOR7 {
+  top: 75%;   /* ← subí o bajá este % para mover la de abajo */
+  left: 65%;
+  transform: translateX(-20%) scaleX(1) rotate(180deg);
+position: absolute;
+width: 260px;
+height: auto;
+filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));}
 
 /* CUADRO1 */
 .CUADRO1 {
@@ -57,6 +129,7 @@ body {
   border: 2px solid rgba(223, 211, 191,0.10);
   box-shadow: 0 0 20px rgba(205, 195, 177,0.3);
   text-align: center;
+  
 }
 
 .TEXTO1 {
@@ -65,6 +138,7 @@ body {
   text-shadow: 0 1px 2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.2);
   font-size: 20px; 
   animation: popTitulo 1s ease;
+  margin: 4px 0 0 0; /* margen arriba de 10px para bajarlo */
 }
 
 .TITULO1 {
@@ -103,7 +177,7 @@ body {
   font-family: LeisolK;
   font-size: 45px;
   font-weight: 300;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.4);
   margin: 0;
 }
 
@@ -111,24 +185,36 @@ body {
 .contador {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 11px; /* espacio entre unidades */
   margin: 0 0 20px 0;
+  background-image: linear-gradient(to bottom, transparent 85%, #efe1c7 100%), url("img/agus.png");
+  box-shadow: 0 0 20px rgba(205, 195, 177,0.3);
+  filter: drop-shadow(0 2px 4px rgb(60, 60, 60, 0.06));  border-radius: 10px;
+  text-align: center;
+  width:270px;
+  padding: 9px 0; /* 20px arriba y abajo */
+  
+
 }
 
 .unidad {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.3);
+  align-items: center; /* centrado vertical */
 }
 
 #dias, #horas, #minutos, #segundos {
-  font-size: 25px;
+  font-size: 20px;
   font-family: FaxK;
   font-weight: 100;
+  transform: translateX(5px); /* 2px a la derecha, poné negativo si querés a la izquierda */
+ 
 }
 
 .label {
-  font-size: 14px;
+  font-size: 13px;
   font-family: FaxK;
   text-transform: uppercase;
   color: #000; 
@@ -152,7 +238,7 @@ body {
   font-family: LeisolK;
   font-size: 45px;
   font-weight: 300;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.3);
   margin: 0 auto;
 }
 
@@ -161,7 +247,7 @@ img.PINLOCATION {
   margin: 0 auto;
   width: 35px;
   height: auto;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.6);
+filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
 }
 
 .TEXTO2CUADRO2 {
@@ -179,6 +265,9 @@ img.PINLOCATION {
   margin: 5px auto;
   width: 120px;
   height: auto;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
+
+  
 }
 
 /* ESPACIO2 para texto largo */
@@ -196,7 +285,7 @@ img.PINLOCATION {
   font-family: FaxK;
   text-transform: uppercase;
   color: #000; 
-  text-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.1);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.3);
   margin: 0 auto;
   line-height: 1.9;
   word-wrap: break-word;
@@ -219,7 +308,7 @@ img.PINLOCATION {
   font-family: LeisolK;
   font-size: 45px;
   font-weight: 300;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.3);
   margin: 0 auto;
 }
 
@@ -237,6 +326,7 @@ img.CLOCKTIME{
   margin: 0 auto;
   width: 35px;
   height: auto;
+filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
 }
 
 .ESPACIO3 {
@@ -252,7 +342,7 @@ img.CLOCKTIME{
   font-family: LeisolK;
   font-size: 45px;
   font-weight: 300;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.3);
   margin: 0 auto;
 }
 
@@ -275,6 +365,7 @@ img.HEELSHOE{
   margin: 10px auto; /* 10px arriba y abajo, auto a los lados para centrar */
   width: 35px;
   height: auto;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
 }
 
 .CUADRO4{
@@ -293,7 +384,7 @@ img.HEELSHOE{
   font-family: LeisolK;
   font-size: 45px;
   font-weight: 300;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.3);
   margin: 0 auto;
 }
 
@@ -309,6 +400,7 @@ img.REGALOPRESENTE{
   margin: 10px auto; /* 10px arriba y abajo, auto a los lados para centrar */
   width: 35px;
   height: auto;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
 }
 
 
@@ -324,7 +416,7 @@ img.REGALOPRESENTE{
 .TEXTO1ESPACIO4{
   margin: 0;
   font-family: FaxK;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.2);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.3);
   font-size: 20px; 
 }
 
@@ -333,12 +425,14 @@ img.CAMERASHOT{
   margin: 10px auto; /* 10px arriba y abajo, auto a los lados para centrar */
   width: 35px;
   height: auto;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
 }
 .BTNSUBIRFOTOS {
   display: block;
   margin: 5px auto;
   width: 125px;
   height: auto;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
 }
 
 .CUADRO5{
@@ -355,9 +449,9 @@ img.CAMERASHOT{
 
 .TEXTO1CUADRO5{
   font-family: LeisolK;
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 300;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5), 0 2px 6px rgba(0,0,0,0.4);
   margin: 0 auto;
 }
 
@@ -366,6 +460,7 @@ img.WPPSEND{
   margin: 10px auto; /* 10px arriba y abajo, auto a los lados para centrar */
   width: 35px;
   height: auto;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
 }
 
 .BTNCONFIRMAR{
@@ -373,11 +468,11 @@ img.WPPSEND{
   margin: 5px auto;
   width: 125px;
   height: auto;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
 }
 
 .BTNCONFIRMAR:hover, .BTNSUBIRFOTOS:hover, .bord:hover{
   transform: scale(1.06);
-
   filter:
     drop-shadow(0 2px 4px rgba(0,0,0,0.4))
     drop-shadow(0 0 12px rgba(201,168,106,0.7))
@@ -388,5 +483,13 @@ img.WPPSEND{
   transform: scale(0.95);
   filter:
     drop-shadow(0 1px 2px rgba(0,0,0,0.5));
-
 }
+
+
+.unidad span#dias::after,
+.unidad span#horas::after,
+.unidad span#minutos::after {
+  content: ":";      /* agrega los dos puntos */
+  margin-left: 10px;  /* opcional, un poquito de espacio sin tocar el layout */
+}
+
