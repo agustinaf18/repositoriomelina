@@ -80,7 +80,8 @@ body {
 /* DERECHA CONTROLADA */
 .FLOR2 {
   top: 17%;
-  left:50%; /* en vez de left 53% */
+  left:53%; /* en vez de left 53% */
+  
 }
 
 /* IZQUIERDA ABAJO */
@@ -88,7 +89,6 @@ body {
   top: 39%;
   left: -28%;
   transform: scaleX(-1) rotate(5deg);
-  width: 260px;
 }
 
 /* DERECHA */
