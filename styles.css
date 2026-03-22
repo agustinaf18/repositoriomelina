@@ -22,12 +22,16 @@
   src: url("Faxfont Fine Regular.otf");
 }
 
-/* Base */
 html, body {
   margin: 0;
   padding: 0;
-  min-height: 100%; /* body crece con el contenido */
+  overflow-x: hidden;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 
 body {
   background-color: #e9dac2;   /* color de respaldo si la img falla */
@@ -35,7 +39,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain ;      /* o contain si no querés que corte */
   background-position: center center;
-   background-size: 110% auto;     
   background-position: center top;
 }
 
@@ -45,7 +48,7 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .contenedor {
@@ -59,64 +62,66 @@ body {
  overflow: hidden;*/
 }
 
-.FLOR1, .FLOR2, .FLOR3, .FLOR4 {
+.FLOR1, .FLOR2, .FLOR3, .FLOR4, .FLOR5, .FLOR6, .FLOR7 {
   position: absolute;
   width: 220px;
   height: auto;
   filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
 }
 
+/* IZQUIERDA */
 .FLOR1 {
-  top: 0%;    /* ← subí o bajá este % */
-  left: 0%;
+  width: 230px;
+
+  top: 0%;
+  left: 0;
 }
 
+/* DERECHA CONTROLADA */
 .FLOR2 {
-  top: 17%;   /* ← la principal, movela desde acá */
-  left: 53%;
-  transform: rotate(0deg);
+  top: 17%;
+  right: 0; /* en vez de left 53% */
 }
 
+/* IZQUIERDA ABAJO */
 .FLOR3 {
-  top: 32%;   /* ← subí o bajá este % para mover la de abajo */
-  left: 5%;
-  transform: translateX(-20%) scaleX(-1) rotate(-268deg);
+  top: 39%;
+  left: -24%;
+  transform: scaleX(-1) rotate(0deg);
   width: 260px;
 }
 
+/* DERECHA */
 .FLOR4 {
-  top: 20%;   /* ← subí o bajá este % para mover la de abajo */
-  left: 70%;
-  transform: translateX(-20%) scaleX(-1) rotate(-90deg);
+  top: 20%;
+  right: -15%;
+  transform: scaleX(-1) rotate(-90deg);
   width: 260px;
 }
 
+/* DERECHA */
 .FLOR5 {
-  top: 46%;   /* ← subí o bajá este % para mover la de abajo */
-  left: 65%;
-  transform: translateX(-20%) scaleX(-1) rotate(-90deg);
-position: absolute;
-width: 260px;
-height: auto;
-filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));}
+  top:39%;
+  right: -25%;
+  transform: scaleX(-1) rotate(-180deg);
+  width: 260px;
+}
 
+/* IZQUIERDA */
 .FLOR6 {
-  top: 65%;   /* ← subí o bajá este % para mover la de abajo */
-  left: -5%;
-  transform: translateX(-20%) scaleX(1) rotate(195deg);
-position: absolute;
-width: 260px;
-height: auto;
-filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));}
+  top: 60%;
+  left:-20%;
+  transform: scaleX(1) rotate(195deg);
+  width: 260px;
+}
 
+/* DERECHA */
 .FLOR7 {
-  top: 75%;   /* ← subí o bajá este % para mover la de abajo */
-  left: 65%;
-  transform: translateX(-20%) scaleX(1) rotate(180deg);
-position: absolute;
-width: 260px;
-height: auto;
-filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));}
+  top: 76%;
+  right: 0;
+  transform: scaleX(1) rotate(180deg);
+  width: 260px;
+}
 
 /* CUADRO1 */
 .CUADRO1 {
@@ -223,8 +228,8 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));}
 
 /* CUADRO2 */
 .CUADRO2 {
-  width: 87%;          
-  max-width: 450px;    
+  width:  105%;          
+  max-width: 500px;    
   background-image: linear-gradient(to bottom, transparent 85%, #efe1c7 100%), url("img/agus.png");
   border-radius: 10px;
   padding: 10px 20px; 
@@ -293,8 +298,8 @@ filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
 
 /* CUADRO3 */
 .CUADRO3 {
-  width: 87%;          
-  max-width: 450px;    
+  width:  105%;          
+  max-width: 500px;      
   background-image: linear-gradient(to bottom, transparent 85%, #efe1c7 100%), url("img/agus.png");
   border-radius: 10px;
   padding: 10px 20px; 
@@ -369,8 +374,8 @@ img.HEELSHOE{
 }
 
 .CUADRO4{
-  width: 87%;          
-  max-width: 450px;    
+  width:  105%;          
+  max-width: 500px;      
   background-image: linear-gradient(to bottom, transparent 85%, #efe1c7 100%), url("img/agus.png");
   border-radius: 10px;
   padding: 10px 20px; 
@@ -436,8 +441,8 @@ img.CAMERASHOT{
 }
 
 .CUADRO5{
-  width: 87%;          
-  max-width: 450px;    
+  width:  105%;          
+  max-width: 500px;        
   background-image: linear-gradient(to bottom, transparent 85%, #efe1c7 100%), url("img/agus.png");
   border-radius: 10px;
   padding: 10px 20px; 
@@ -449,7 +454,7 @@ img.CAMERASHOT{
 
 .TEXTO1CUADRO5{
   font-family: LeisolK;
-  font-size: 38px;
+  font-size: 35px;
   font-weight: 300;
   text-shadow: 0 1px 2px rgba(0,0,0,0.5), 0 2px 6px rgba(0,0,0,0.4);
   margin: 0 auto;
