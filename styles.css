@@ -80,7 +80,7 @@ body {
 /* DERECHA CONTROLADA */
 .FLOR2 {
   top: 17%;
-  left:57%; /* en vez de left 53% */
+  left:53%; /* en vez de left 53% */
 }
 
 /* IZQUIERDA ABAJO */
@@ -94,7 +94,7 @@ body {
 /* DERECHA */
 .FLOR4 {
   top: 20%;
-  left: 63%;
+  left: 56%;
   transform: scaleX(-1) rotate(-90deg);
   width: 260px;
 }
@@ -125,7 +125,7 @@ body {
 
 /* CUADRO1 */
 .CUADRO1 {
-  width: 85%;
+  width: 90%;
   max-width: 400px;
   background-image: linear-gradient(to bottom, transparent 85%, #efe1c7 100%), url("img/agus.png");
   border-radius: 10px;
